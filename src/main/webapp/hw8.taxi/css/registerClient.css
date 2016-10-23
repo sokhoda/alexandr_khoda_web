@@ -1,0 +1,38 @@
+label {
+    display: inline-block;
+    text-align: right;
+    width: 200px;
+    font-weight: bold;
+    font-family: Arial;
+    color: saddlebrown;
+    line-height: 200%;
+}
+label.regMessage {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 10%;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: x-large;
+    line-height: 200%;
+}
+
+input[type=text]{
+    display: inline-block;
+    text-align: right;
+    width: 300px;
+    font-weight: bold;
+    background-color: skyblue;
+    color: firebrick;
+    line-height: 150%;
+}
+
+input[type=submit]{
+    width: auto;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    color: forestgreen;
+    line-height: 200%;
+}

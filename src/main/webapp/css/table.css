@@ -1,0 +1,85 @@
+table{
+    border-collapse: collapse;
+    font-size: x-small;
+}
+
+table td.column-left-bottom  {
+     border-left:   2px solid navy;
+     border-bottom: 2px solid navy;
+     padding:0 0 0 10px;
+    font-size: x-small;
+    width: 9em;
+ }
+
+table td.right, th.right  {
+    border-right:   2px solid navy;
+    padding: 0 0 0 10px;
+    font-size: x-small;
+    width: 5em;
+}
+
+table th.column-left-bottom-top  {
+    border-left:    2px solid navy;
+    border-bottom:  2px solid navy;
+    border-top:     2px solid navy;
+    padding:0 0 0 0;
+    font-size: x-small;
+ }
+
+table td.top {
+    border-top:     2px solid navy;
+    padding:0 0 0 10px;
+    font-size: x-small;
+}
+
+button.but {
+    margin-left: 5px;
+    min-width: 50px;
+    color: darkred;
+    padding: 1% 2% 1% 2%;
+    font-size: x-small;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    background-color: bisque ;
+}
+
+button.but:hover{
+    opacity: 0.6;
+}
+
+button.redrawBut{
+    max-height: 25px;
+    margin: 10px 10px 10px 0;
+    vertical-align: middle;
+padding:0 0 0 0;
+text-align: center;
+}
+
+.message{
+    color: red;
+    font-size: 18px;
+    margin: 0 0 0 0;
+    position: absolute;
+}
+
+input.editedNo {
+    max-width: 8.8em;
+    max-height: 15px;
+    font-size: x-small;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    vertical-align: top;
+    color: brown;
+    background-color: bisque;
+}
+
+input.editedBal {
+    max-width: 4.8em;
+    max-height: 15px;
+    font-size: x-small;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    vertical-align: top;
+    color: brown;
+    background-color: bisque;
+}

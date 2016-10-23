@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: "Times New Roman";
+    color: firebrick;
+    line-height: 100%;
+}
+
+input[type=text]{
+    text-align: right;
+    width: 60px;
+    font-weight: bold;
+    background-color: blanchedalmond;
+}
+
+input[type=submit]{
+    width: auto;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    color: forestgreen;
+    line-height: 200%;
+}
+
+#TaxiImg{
+    margin-top: 2%;
+    width: 60%;
+    height: 130%;
+}

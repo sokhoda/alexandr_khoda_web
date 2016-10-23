@@ -1,0 +1,149 @@
+<!DOCTYPE html><html lang="en-UA">
+<head>
+    <br> <&nbsp;>
+ this is head
+</head>
+<body>
+<table>
+    <td><button name='but' id="123">press</button> </td>
+    <td><button name='but' id="45">press</button> </td>
+    <td><button name='but' id="67">press</button> </td>
+</table>
+
+<!--<button name='but' id="123">press</button>-->
+<!--<button name='but' >press</button>-->
+<!--<button name='but' >press</button>-->
+
+<script>
+function printDOM(pref, node){
+    if (node != null) {
+		document.writeln(pref + node.tagName+'<br>' );
+    //node.write(node.innerHTML);
+
+    pref += '&nbsp;&nbsp;&nbsp;';
+    var childList = node.childNodes;
+
+    var i = 0;
+    while (i < childList.length){
+        printDOM(pref, childList.item(i++));
+        //document.write(pref + childList.item(i++).tagName +'<br>');
+        //alert(i)
+    }
+	}
+}
+
+function getTree(){
+    //debugger
+	document.write();
+    var doc = document.documentElement;
+    //alert(doc.tagName);
+    //document.write('<br> <br> <br> <br> <br> <br> <br> <br> <br>');
+    //    printDOM('',doc);
+
+};
+
+var arr=[];
+arr[0] = 10;
+arr[1] = 11;
+arr[4] = 12;
+
+//console.log('arr["0"] '+arr['0']);
+//console.log('arr[0] ' + arr[0]);
+//console.log('arr[1] ' + arr[1]);
+//console.log('arr[2] ' + arr[2]);
+
+//var s = '33';//'345.d5g.33g 3g33,:gr';
+//console.log(s.match(/[^0-9.,\s]/g));
+/*
+for (var i = 0; i < arr.length; i++){
+console.log('arr['+i+']=' + arr[i]);
+}
+//arr.splice('1',1);
+delete arr[1];
+console.log('splice');
+var s='';
+for (var i = 0; i < arr.length; i++){
+if (typeof(arr[i]) == 'undefined') {s= 'undef';} else {s='';}
+console.log('arr['+i+']=' + arr[i] + ' ' +s);
+var c = [1,2,3];
+console.log(c.toString());
+}
+*/
+
+function Phone(no, balance) {
+    this.no = no;
+    this.balance  = balance;
+    this.tariff = 1;
+    this.call = function (toNo, minutes){
+        if(minutes * this.tariff > this.balance){
+            //alert(new Date() + ': невозможно установить соединение:' +
+            //    ' недостаточно средств на счету (' + this.balance + ')');
+            throw new Error('my error');
+        }
+        else {
+            this.balance -= minutes * this.tariff;
+            alert(new Date() + ': абонент номер = ' + this.no + ' звонит' +
+                    ' абоненту номер = ' + toNo +".\n Новый баланс " + this.balance);
+        }
+    };
+    this.getNo = function(){
+        return this.no;
+    };
+    this.setNo = function(no){
+        this.no = no;
+    };
+    this.getBalance = function(){
+        return this.balance;
+    };
+    this.setBalance = function(balance){
+        this.balance = balance;
+    };
+    this.toString = function(){
+        return this.getNo() + ', ' + this.getBalance();
+    };
+
+}
+
+function getPosition(element) {
+    var xPosition = 0;
+    var yPosition = 0;
+
+    while(element) {
+        xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
+        yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
+        element = element.offsetParent;
+    }
+    return { x: xPosition, y: yPosition };
+}
+var element = document.getElementById('123');
+var obj = getPosition(element);
+console.log(document.getElementById('123').tagName + ' ' + obj.x + ', ' +
+        obj.y);
+var label = document.createElement('label');
+label.innerHTML = 'Hi, I"m a label.';
+label.style.position = "absolute";
+label.style.left = (obj.x + element.offsetWidth + 20 ) + 'px';
+label.style.top = obj.y + 'px';
+
+document.getElementsByTagName('body')[0].appendChild(label);
+function Eclear() {
+    var el = document.getElementsByName('but');
+    var j = 0;
+debugger
+    while(el.length){
+        el[0].parentNode.innerHTML = '2';
+    }
+}
+Eclear();
+
+
+    ar = new Array(10,9);
+        ar.push(new Phone('1111','1'));
+        ar.push(new Phone('2222','2'));
+console.log(ar.length);
+    for (var i in ar){
+        console.log(ar[i].toString())
+    }
+</script>
+
+</body>

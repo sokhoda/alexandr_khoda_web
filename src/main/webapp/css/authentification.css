@@ -1,0 +1,43 @@
+label{
+    display: inline-block;
+    text-align: right;
+    width: 200px;
+    font-weight: bold;
+    font-family: Arial;
+    color: darkred;
+    line-height: 200%;
+}
+input[type=text]{
+    display: inline-block;
+    text-align: left;
+    width: 200px;
+    font-weight: bold;
+    background-color: skyblue;
+    color: firebrick;
+    line-height: 150%;
+}
+input[type=password]{
+    display: inline-block;
+    text-align: left;
+    width: 200px;
+    font-weight: bold;
+    background-color: yellow;
+    color: firebrick;
+    line-height: 150%;
+}
+
+input[type=submit]{
+    width: auto;
+    font-size: x-small;
+    font-weight: bold;
+    color: darkred ;   /*forestgreen;*/
+    line-height: 200%;
+
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    background-color: bisque ;
+
+}
+input[type=submit]:hover{
+    opacity: 0.6;
+}
